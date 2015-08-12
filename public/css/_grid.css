@@ -1,0 +1,106 @@
+/*BOX*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* Remember to link CSS files to project */
+
+/*CONTAINERS*/
+.container {
+    margin: auto;
+    /*max-width: 1200px;*/
+}
+
+/*.column > .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}*/
+
+/* when you nest a row inside a column
+this pulls out the margin soo they don't touch side by side
+-10 gets full width, commented out there is default pad 10px */
+
+/*ROWS*/
+.row {
+    /* as wide as the container max */
+    width: 100%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*COLUMNS*/
+.column {
+    float: left;
+    padding-right: 10px;
+    width: 100%;
+}
+.one-twelfth {
+    width: 8.33%;
+}
+.one-eighth {
+    width: 12.5%;
+}
+.one-sixth {
+    width: 16.66%;
+}
+.one-fifth {
+    width: 20%;
+}
+.one-fourth {
+    width: 25%;
+}
+.one-third {
+    width: 33.3%;
+}
+.three-eighths {
+	width: 37.5%;
+}
+.two-fifths {
+    width: 40%;
+}
+.one-half {
+    width: 50%;
+}
+.two-thirds {
+	width: 66.1%;
+}
+.five-eighths {
+    width: 62.5%;
+}
+.three-fourths {
+    width: 75%;
+}
+.four-fifths {
+    width: 80%;
+}
+
+/*OFFSETS*/
+.offset-one-twelfth {
+    margin-left: 8.33%;
+}
+.offset-one-eighth {
+    margin-left: 12.5%;
+}
+.offset-one-sixth {
+    margin-left: 16.66%;
+}
+.offset-one-fourth {
+    margin-left: 25%;
+}
+.offset-one-third {
+    margin-left: 33.3%;
+}
+.offset-three-eighths {
+	margin-left: 37.5%;
+}
+.offset-one-half {
+    margin-left: 50%;
+}
+.offset-two-thirds {
+	margin-left: 66.67%;
+}
