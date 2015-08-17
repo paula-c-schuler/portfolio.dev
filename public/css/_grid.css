@@ -5,24 +5,46 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-/* Remember to link CSS files to project */
 
-/*CONTAINERS*/
+/*-------------------------------*/
+    CONTAINER 
+/*-------------------------------*/
 .container {
+    background-color: white;
     margin: auto;
     /*max-width: 1200px;*/
 }
+
+/* When you nest a row inside a column,
+ * this pulls out the margin so they don't touch side by side.
+ * The -10 element gets full width inside the parent element.
+ *
+ * When commented out and not in play, there is default pad 10px */
 
 /*.column > .row {
     margin-left: -10px;
     margin-right: -10px;
 }*/
 
-/* when you nest a row inside a column
-this pulls out the margin soo they don't touch side by side
--10 gets full width, commented out there is default pad 10px */
 
-/*ROWS*/
+
+/*-------------------------------*/
+    ROWS
+/*-------------------------------*/
+/* Sass code for general columns
+=============================*/
+.row {
+    width: 100%;
+  
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/* Straight CSS code for general rows.
+==============================*/
 .row {
     /* as wide as the container max */
     width: 100%;
@@ -33,51 +55,237 @@ this pulls out the margin soo they don't touch side by side
     clear: both;
 }
 
-/*COLUMNS*/
+/*-------------------------------*/
+    COLUMNS 
+/*-------------------------------*/
+/* Straight CSS code for general columns
+==============================*/
 .column {
     float: left;
     padding-right: 10px;
+    /* as wide as the parent */
     width: 100%;
 }
-.one-twelfth {
-    width: 8.33%;
+/* Remove padding in last element of column */
+.column:last-of-type {
+    padding-right: 0px;
 }
-.one-eighth {
-    width: 12.5%;
+
+/* Opt-in outside padding */
+.container-pad {
+    padding: $pad 0 $pad $pad;
+    [class*='col-']:last-of-type {
+    padding-right: $pad;
+  }
 }
-.one-sixth {
-    width: 16.66%;
+
+/* Sass code for general columns
+=============================*/
+
+$pad: 10px;
+
+[class*='col-'] {
+    float: left;
+    padding-right: $pad;
+    .grid &:last-of-type {
+    padding-right: 0;
+  }
 }
-.one-fifth {
+
+
+/* Extra Small Screens - Phones
+=============================*/
+.col-xs-one-fifth {
     width: 20%;
 }
-.one-fourth {
+.col-xs-one-fourth {
     width: 25%;
 }
-.one-third {
-    width: 33.3%;
+.col-xs-one-third {
+    width: 33.33%;
 }
-.three-eighths {
-	width: 37.5%;
-}
-.two-fifths {
-    width: 40%;
-}
-.one-half {
+.col-xs-one-half {
     width: 50%;
 }
-.two-thirds {
-	width: 66.1%;
+.col-xs-two-thirds {
+    width: 66.66%;
 }
-.five-eighths {
-    width: 62.5%;
-}
-.three-fourths {
+.col-xs-three-fourths {
     width: 75%;
 }
-.four-fifths {
+.col-xs-four-fifths {
     width: 80%;
 }
+
+/* Small screens - Phablets 
+==============================*/
+.col-sm-one-eighth {
+    width: 12.5%;
+}
+.col-sm-one-sixth {
+    width: 16.66%;
+}
+.col-sm-one-fifth {
+    width: 20%;
+}
+.col-sm-one-fourth {
+    width: 25%;
+}
+.col-sm-one-third {
+    width: 33.3%;
+}
+.col-sm-three-eighths {
+    width: 37.5%;
+}
+.col-sm-two-fifths {
+    width: 40%;
+}
+.col-sm-one-half {
+    width: 50%;
+}
+.col-sm-five-eighths {
+    width: 62.5%;
+}
+.col-sm-two-thirds {
+    width: 66.1%;
+}
+.col-sm-three-fourths {
+    width: 75%;
+}
+.col-sm-four-fifths {
+    width: 80%;
+}
+
+/* Medium screens - Tablets 
+==============================*/
+.col-md-one-twelfth {
+    width: 8.33%;
+}
+.col-md-one-eighth {
+    width: 12.5%;
+}
+.col-md-one-sixth {
+    width: 16.66%;
+}
+.col-md-one-fifth {
+    width: 20%;
+}
+.col-md-one-fourth {
+    width: 25%;
+}
+.col-md-one-third {
+    width: 33.3%;
+}
+.col-md-three-eighths {
+	width: 37.5%;
+}
+.col-md-two-fifths {
+    width: 40%;
+}
+.col-md-one-half {
+    width: 50%;
+}
+.col-md-five-eighths {
+    width: 62.5%;
+}
+.col-md-two-thirds {
+	width: 66.1%;
+}
+.col-md-three-fourths {
+    width: 75%;
+}
+.col-md-four-fifths {
+    width: 80%;
+}
+
+/* Large screens - Desktops
+==============================*/
+.col-lg-one-twelfth {
+    width: 8.33%;
+}
+.col-lg-one-eighth {
+    width: 12.5%;
+}
+.col-lg-one-sixth {
+    width: 16.66%;
+}
+.col-lg-one-fifth {
+    width: 20%;
+}
+.col-lg-one-fourth {
+    width: 25%;
+}
+.col-lg-one-third {
+    width: 33.3%;
+}
+.col-lg-three-eighths {
+    width: 37.5%;
+}
+.col-lg-two-fifths {
+    width: 40%;
+}
+.col-lg-one-half {
+    width: 50%;
+}
+.col-lg-five-eighths {
+    width: 62.5%;
+}
+.col-lg-two-thirds {
+    width: 66.1%;
+}
+.col-lg-three-fourths {
+    width: 75%;
+}
+.col-lg-four-fifths {
+    width: 80%;
+}
+
+/* Extra large screens - TV screens
+==============================*/
+.col-xl-one-twelfth {
+    width: 8.33%;
+}
+.col-xl-one-eighth {
+    width: 12.5%;
+}
+.col-xl-one-sixth {
+    width: 16.66%;
+}
+.col-xl-one-fifth {
+    width: 20%;
+}
+.col-xl-one-fourth {
+    width: 25%;
+}
+.col-xl-one-third {
+    width: 33.3%;
+}
+.col-xl-three-eighths {
+    width: 37.5%;
+}
+.col-xl-two-fifths {
+    width: 40%;
+}
+.col-xl-one-half {
+    width: 50%;
+}
+.col-xl-two-thirds {
+    width: 66.1%;
+}
+.col-xl-five-eighths {
+    width: 62.5%;
+}
+.col-xl-three-fourths {
+    width: 75%;
+}
+.col-xl-four-fifths {
+    width: 80%;
+}
+
+
+
+
+
 
 /*OFFSETS*/
 .offset-one-twelfth {
