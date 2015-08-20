@@ -33,30 +33,74 @@
 \*------------------------------------*/
 
 .primary-color {
-
+  background-color: #3F51B5;
 }
 
 .secondary-color {
-
+  background-color: #7986CB;
 }
 
-.tertiary-color {
-
+.accent-color {
+  background-color: #FF80AB;
 }
 
-.primary-text-color {
-
+/* Colors Library
+   ========================================================================== */
+/* Blues */
+.primary-color {
+  background-color: #3F51B5;
+}
+.primary-color-fallback {
+  background-color: #E8EAF6;
+}
+.primary-color-lighter {
+  background-color: #7986CB;
+}
+.primary-color-darker {
+  background-color: #1A237E;
+}
+.primary-color-bright {
+  background-color: #3D5AFE;
 }
 
-.secondary-text-color {
-	
+/* Pinks */
+.accent-color {
+  background-color: #FF4081;
+}
+.accent-color-fallback {
+  background-color: #FCE4EC;
+}
+.accent-color-lighter {
+  background-color: #FF80AB;
+}
+.accent-color-darker {
+  background-color: #F50057;
+}
+
+/* accent color swatches have light text default */
+.text-base-light {
+  color: #FFFFFF;
+}
+/* alternative text color for light backgrounds */
+.text-base-dark {
+  color: #000000;
+}
+
+.text-primary, .text-primary-light {
+  opacity: 87%;
+}
+.text-secondary, .text-secondary-light {
+  opacity: 54%;
+}
+.text-hint, .text-hint-light {
+  opacity: 26%;
 }
 
 /*------------------------------------*\
     #MIXINS
 \*------------------------------------*/
 /* Font size */
-@mixin large-text {
+/*@mixin large-text {
 
 }
 @mixin main-text {
@@ -64,7 +108,7 @@
 }
 @mixin fine-text {
 
-}
+}*/
 
 /* Border radius */
 
@@ -187,6 +231,8 @@ img {
  * are based on 10px sizing. So 1.5rem = 15px
  *
  */
+
+
 html {
   	font-size: 62.5%; 
 }
@@ -200,6 +246,9 @@ body {
   	color: #B7B7B7;*/ 
 }
 
+
+/* Headings 
+   ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
   	margin-top: 0;
   	margin-bottom: 2rem;
@@ -276,6 +325,8 @@ h6 {
   	text-transform: uppercase; 
 }
 
+/* Other Elements 
+   ========================================================================== */
 p {
   	margin-top: 0; 
 }
@@ -288,4 +339,45 @@ a:hover {
   	color: #217dbb; 
 }
 
+/* Code Blocks
+   ========================================================================== */
+
+ul.color {
+  margin: 0 auto;
+  width: 330px;
+  padding: 0;
+  display: inline-block;
+  list-style-type: none;
+  margin-bottom: 50px;
+}
+li.thick {
+  width: 100%;
+  height: 145px;
+  padding: 15px;
+}
+li.name {
+  margin-bottom: 60px;
+  display: block;
+}
+.thin {
+  width: 100%;
+  padding: 15px;
+}
+.hex {
+  float: right;
+}
+.divider {
+  background-color: white;
+  height: 3px;
+}
+
+
+
+/*------------------------------------*\
+    TRUMPS
+\*------------------------------------*/
+
+
+/* Media Queries
+   ========================================================================== */
 
