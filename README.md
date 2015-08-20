@@ -1,10 +1,12 @@
 First portfolio site.
-
-TODO: Wireframe
-TODO: Identify assets 
-TODO: Organize public folder
-TODO: Organize assets into folders
+Mobile first, material design. 
+TODO: Identify assets
+TODO: Choose colors and fonts.
+DONE: Organize public folder 
 TODO: Write CSS style guide for color, topography, resets
+TODO: Wireframe
+TODO: Organize assets into folders
+ 
 TODO: Write initial HTML
 TODO: Style navigation 
 TODO: Style footer
