@@ -1,6 +1,15 @@
 First portfolio site.
 Mobile first, material design. 
-TODO: Identify assets
+TODO: Identify assets:
+	Projects from Codeup: 
+		Website responsive redesign
+		Whack-A-Mole game
+		Calculator
+		Simple Simon game
+		Weather
+		Map
+		PHP projects
+		mySQL projects
 TODO: Choose colors and fonts.
 DONE: Organize public folder 
 TODO: Write CSS style guide for color, topography, resets
