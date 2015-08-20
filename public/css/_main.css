@@ -343,12 +343,14 @@ a:hover {
    ========================================================================== */
 
 ul.color {
-  margin: 0 auto;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  margin-left: 20px;
   width: 330px;
   padding: 0;
   display: inline-block;
   list-style-type: none;
-  margin-bottom: 50px;
+  
 }
 li.thick {
   width: 100%;

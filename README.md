@@ -1,5 +1,5 @@
 First portfolio site.
-Mobile first, material design. 
+Mobile first, flat design. 
 TODO: Identify assets:
 	Projects from Codeup: 
 		Website responsive redesign
