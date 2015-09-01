@@ -2,9 +2,9 @@
 html {
     box-sizing: border-box;
 }
-/**, *:before, *:after {
+*, *:before, *:after {
     box-sizing: inherit;
-}*/
+}
 
 /*-------------------------------*/
     CONTAINER 
@@ -94,6 +94,9 @@ $pad: 10px;
 
 /* Extra Small Screens - Phones
 =============================*/
+.col-xs-one-twelfth {
+    width: 8.3%;
+}
 .col-xs-one-fifth {
     width: 20%;
 }

@@ -1,4 +1,9 @@
 /* Removed max-width in grid */
+/* Responsive design, basic display changes 
+ *   Up to 770px wide
+ *   771px to ___ 
+ *   ___ to ___
+ */
 
 /**
  * CONTENTS
@@ -65,16 +70,16 @@
 
 /* Pinks */
 .accent-color {
-  background-color: #FF4081;
+  background-color: #00E676;
 }
 .accent-color-fallback {
-  background-color: #FCE4EC;
+  background-color: #B9F6CA;
 }
 .accent-color-lighter {
-  background-color: #FF80AB;
+  background-color: #69F0AE;
 }
 .accent-color-darker {
-  background-color: #F50057;
+  background-color: #00C853;
 }
 
 /* accent color swatches have light text default */
@@ -341,7 +346,10 @@ a:hover {
 
 /* Code Blocks
    ========================================================================== */
-
+/* Color swatches on style sheet page */
+#stylesheet {
+  text-align: center;
+}
 ul.color {
   margin-right: 20px;
   margin-bottom: 50px;
@@ -380,6 +388,24 @@ li.name {
 \*------------------------------------*/
 
 
+
 /* Media Queries
    ========================================================================== */
+/* Mobile First is default*/
 
+/* Small to Medium Screens */
+/*@media screen and (min-width: 768px) {
+
+}*/
+
+/*@media screen and (min-width:768px) and (max-width:992px) {
+
+}*/
+
+/*@media screen and (min-width:992px) and (max-width:1200px) {
+
+}*/
+
+/*@media screen and (min-width: 1201px) {
+
+}*/
