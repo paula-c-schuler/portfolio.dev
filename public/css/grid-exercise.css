@@ -1,0 +1,136 @@
+/* BOX */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/* CONTAINERS */
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+/*.column > .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}*/
+
+/* when you nest a row inside a column
+this pulls out the margin so they don't touch side by side
+-10 gets full width, commented out there is default pad 10px */
+
+/* ROWS */
+.row {
+    /* width relative to container or parent div */
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* COLUMNS */
+.column {
+    float: left;
+    padding: 10px;
+}
+.one-twelfth {
+    width: 8.33%;
+    background-color: DarkGreen;
+}
+.one-eighth {
+    width: 12.5%;
+    background-color: Green;
+}
+.one-sixth {
+    width: 16.66%;
+    background-color: SpringGreen;
+}
+.one-fifth {
+    width: 20%;
+    background-color: ForestGreen;
+}
+.one-fourth {
+    width: 25%;
+    background-color: SeaGreen;
+}
+.one-third {
+    width: 33.33%;
+    background-color: DarkSlateGray;
+}
+.three-eighths {
+	width: 37.5%;
+    background-color: LimeGreen;
+}
+.two-fifths {
+    width: 40%;
+    background-color: MediumSeaGreen;
+}
+.one-half {
+    width: 50%;
+    background-color: DarkOliveGreen;
+}
+.five-eighths {
+    width: 62.5%;
+    background-color: OliveDrab;
+}
+.two-thirds {
+	width: 66.66%;
+    background-color: MediumAquaMarine;
+}
+.three-fourths {
+    width: 75%;
+    background-color: LawnGreen;
+}
+.four-fifths {
+    width: 80%;
+    background-color: Chartreuse;
+}
+
+/* OFFSETS */
+
+/* Weird. Offsets are not synchronizing well.
+ * When using grid to full width and including an offset, the 
+ * the content pushes down out of the row. */
+.offset-one-twelfth {
+    margin-left: 8.33%;
+}
+.offset-one-eighth {
+    margin-left: 12.5%;
+}
+.offset-one-sixth {
+    margin-left: 16.66%;
+}
+.offset-one-fourth {
+    margin-left: 25%;
+}
+.offset-one-third {
+    margin-left: 33.33%;
+}
+.offset-three-eighths {
+	margin-left: 37.5%;
+}
+.offset-one-half {
+    margin-left: 50%;
+}
+.offset-two-thirds {
+	margin-left: 66.67%;
+}
+
+/* HELPERS */
+/* Center column with no offsets */
+.column-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+h1  {
+    text-align: center;
+}
+
+

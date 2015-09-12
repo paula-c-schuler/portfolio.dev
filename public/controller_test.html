@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- Exercise 9.3 Angular Controllers -->
+<!-- Many notes are for my study purposes only -->
+<!-- TODO: RECODE FOR TABLE INSTEAD OF GRID.  -->
+<!-- WANT TODO: Add array of products and prices-->
+
+<!-- "bootstrap" the name of the main controller -->
+<html ng-app="controllerTest">
+<head>
+     <title>controller test in Angular</title>
+     <meta charset="utf-8">
+     <!-- styling that prevents double curly bracket syntax from displaying -->
+     <style type=“text/css”>
+     [ng-cloak] {
+          display: none !important;
+     }
+     </style>
+     <link rel="stylesheet" type="text/css" href="/css/controller_test.css">
+</head>
+
+<!-- ng-cloak for attaching style above (also included in css file for reminder/study) -->
+<body ng-cloak>
+
+     <script type="text/javascript" src="/js/angular.min.js"></script>
+     <script type="text/javascript" src="/js/controllerTest.js"></script>
+
+     <div class="container" ng-controller="CartController as thisCart">
+     	
+          <!-- ng-submit must be on form element, use controller alias, function call -->
+     	<form ng-submit="thisCart.saveItems()">
+     		<div class="row topRow three-fourths">
+
+                    <!-- ng-model is alias, new input name, property for JSON -->
+	     		<input class="one-third" id="item" name="item" type="text" ng-model="thisCart.newItem.description" placeholder="Create an Item to Buy" required>
+	     		<input class="one-third" id="cost" name="cost" type="text" ng-model="thisCart.newItem.cost" placeholder="Enter the Item's Cost" required>
+	     		<button class="one-third" type="submit"> Add This to Your Cart </button>
+    		</div>
+     	</form>
+     	<!-- end of form -->
+
+     	<!-- begin display of shopping cart -->
+          <!-- Grid Version -->
+     	<div class="row four-fifths" id="headers">
+               <div class="row spacerRow"><br><br></div>
+     		<div class="column col0 one-third" id="headersCol0">Items</div>
+     		<div class="column col1 one-sixth" id="headersCol1">Quantity</div>
+     		<div class="column col2 one-sixth" id="headersCol2">Cost</div>
+     		<div class="column col3 one-sixth" id="headersCol3">Total</div>
+     	</div>
+
+          <!-- item is "alias" or name for newItem that will be added to the array of items -->
+     	<div class="row topRow items" ng-repeat="item in thisCart.items">
+     		<div class="column one-third"> {{ item.description }} </div>
+     		<div class="column one-sixth quantityCells">
+     			<input id="quantityEditable" name="quantity" ng-model="item.quantity" type="text" >
+     		</div>
+     		<div class="column col2 one-sixth"> {{ item.cost }} </div>
+     		<div class="column col3 one-sixth"> {{ item.quantity * item.cost }}</div>
+     	</div>
+     	<div class="row subtotal">
+     		<div class="column col0 one-third"></div>
+     		<div class="column col1 one-sixth"></div>
+     		<div class="column col2 one-sixth"></div>
+     		<div class="column col3 one-sixth" id="subtotal"></div>
+     	</div>
+    </div>
+
+</body>
+</html>

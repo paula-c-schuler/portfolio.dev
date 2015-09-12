@@ -69,6 +69,7 @@
 }
 
 /* Pinks */
+/* Change to greens */
 .accent-color {
   background-color: #00E676;
 }
@@ -100,29 +101,6 @@
 .text-hint, .text-hint-light {
   opacity: 26%;
 }
-
-/*------------------------------------*\
-    #MIXINS
-\*------------------------------------*/
-/* Font size */
-/*@mixin large-text {
-
-}
-@mixin main-text {
-
-}
-@mixin fine-text {
-
-}*/
-
-/* Border radius */
-
-/* Clearfix */
-
-/* Box Model */
-/* As per grid */
-
-/* Opacity */
 
 
 /*------------------------------------*\
@@ -247,8 +225,8 @@ body {
   	font-size: 1.6rem;
   	line-height: 1.6;
   	font-weight: 400;
-  	/*font-family: "Source Sans Pro", sans-serif;
-  	color: #B7B7B7;*/ 
+  	font-family: "Source Sans Pro", sans-serif;
+  	color: #B7B7B7; 
 }
 
 
@@ -350,6 +328,7 @@ a:hover {
 #stylesheet {
   text-align: center;
 }
+
 ul.color {
   margin-right: 20px;
   margin-bottom: 50px;
@@ -373,13 +352,19 @@ li.name {
   width: 100%;
   padding: 15px;
 }
-.hex {
+.right {
   float: right;
+}
+.left {
+  float: left;
 }
 .divider {
   background-color: white;
   height: 3px;
 }
+
+
+
 
 
 
@@ -392,6 +377,39 @@ li.name {
 /* Media Queries
    ========================================================================== */
 /* Mobile First is default*/
+.portfolio-box {
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+}
+.portfolio-box.esther-box {
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url("/img/esther.png");
+}
+.portfolio-box.whack-box {
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url("/img/whack.png");
+}
+.portfolio-box.calculator-box {
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url("/img/calculator.png");
+}
+
+
+
 
 /* Small to Medium Screens */
 /*@media screen and (min-width: 768px) {

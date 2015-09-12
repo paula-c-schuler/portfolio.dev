@@ -1,0 +1,73 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+#containerCalculator {
+  background-color: ####73716E;
+  margin: auto;
+  margin: 0 auto;
+  width: 900px; 
+  margin-top: 50px;
+  border: 2px solid grey;
+  border-bottom: 5px solid #666;
+  border-left: 5px solid #444;
+  border-radius: 5px;
+  width: 200px;
+  height: 181px;
+  padding: 5px;
+  
+}
+
+#fieldRow1 {
+  
+}
+
+.row {
+  padding-left: 2px;
+}
+    
+#fieldLeft, #operand, #fieldRight{
+  height: 40px;
+  width: 60.5px;
+  text-align: center;
+  border-radius: 5px;
+  border-top: 2px #fff;
+  padding-left: 2px #6C6C6C;
+  padding-right: 2px #fff;
+  padding-bottom: 2px #6C6C6C;
+
+  
+}
+
+#operand {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  
+}
+
+.buttons{
+  background-color: #E6D9EB;
+	height: 90%;
+	width: 22.2%;
+  border-bottom: 2px solid #666;
+  border-left: 2px solid #444;
+
+}
+
+#btnDecimal {
+  background-color: #E6D9EB;
+  height: 90%;
+  width: 22.2%;
+}
+
+#btn0 {
+  width: 48%;
+}
+
+#btnInteger {
+  font-size: 10px;
+}

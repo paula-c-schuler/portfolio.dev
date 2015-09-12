@@ -1,0 +1,104 @@
+/* TODO: ADJUST FOR SCREEN SIZE <950 WIDE. */
+/* TODO: RECODE FOR TABLE INSTEAD OF GRID.
+ * WANT TODO:Add background image for body of site 
+ * then make boxes for form and display transparent half or so
+ * to empower viewing of the soft image. */
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    font-family: Verdana, sans serif;
+    font-size: large;
+}
+
+/* style that prevents display of Angular curly bracket syntax */
+[ng-cloak] {
+          display: none !important;
+}
+
+.container {
+    margin: auto;
+    max-width: 60%;
+}
+
+.row {
+    width: 90%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row .spacerRow {
+	background-color: white;
+}
+
+.three-fourths {
+    width: 75%;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.one-third {
+    width: 33.3%;
+}
+
+.one-sixth {
+    width: 16.66%;
+}
+
+#headersCol0, #headersCol1, #headersCol2, #headersCol3 {
+	font-weight: bold;
+	background-color: #EEEAE1;
+}
+
+#headersCol0 {
+	text-align: left;
+}
+
+#headersCol1 {
+	text-align: center;
+}
+
+.col4 {
+	background-color: #EEEAE1;
+	font-weight: bold;
+}
+
+.items > .col0, .col1, .col2 {
+	background-color: white;
+}
+
+input, button {
+	border-radius: 10px;
+}
+
+/* nicely responsive */
+button {
+	margin-top: 20px;
+	background-color: green;
+	font-weight: bold;
+	color: white;
+}
+
+.quantityCells {
+	padding: 8px;
+}
+
+#quantityEditable {
+	width: 80%;
+	margin-right: 10px;
+	text-align: center;
+}
+
+
+

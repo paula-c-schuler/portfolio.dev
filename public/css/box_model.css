@@ -1,0 +1,113 @@
+/* EXERCISE 1.5.3 Box Model -  BOX POSITIONING WITH NO FLOATS
+ * EXERCISE 1.5.4 Box Sizing
+ * EXERCISE 1.5.5 Box Positioning
+ * EXERCISE 1.5.7 CSS Organization
+*/
+
+/**
+ * CONTENTS
+ *
+ * COLORS...............Colors list.
+ *
+ * GENERIC
+ * Reset................A level playing field by Normalize.css.
+ * Grid.................Grid layout styles
+ *
+ * TYPOGRPAHY
+ * Type.................Reset HTML or root styles. H1–H6 styles. Basic type styles.
+ * Code.................Styled code blocks.
+ *
+ *
+ */
+
+
+
+/*------------------------------------*\
+    COLORS
+\*------------------------------------*/
+#redBox{
+	background: red;
+}
+#orangeBox{
+	background: orange;
+}
+#yellowBox{
+	background: yellow;
+}
+#greenBox{
+	background: green;
+}
+#blueBox{
+	background: blue;
+}
+#purpleBox{
+	background: purple;
+}
+/*------------------------------------*\
+    GENERIC
+\*------------------------------------*/
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*------------------------------------*\
+    TYPOGRAPHY
+\*------------------------------------*/
+body {
+	font-family: "Times New Roman";
+}
+
+/*------------------------------------*\
+    CODE FOR LAYOUT AND POSITIONING
+\*------------------------------------*/
+#container {
+	position: relative;
+	width: 500px;
+	margin: 0 auto;
+}
+
+h1{
+	color: purple;
+}
+
+.row {
+	width: 500px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.image1 {
+	border: 0px;
+	position: absolute;
+	top: -30px;
+	right: -30px;
+	/*right: 5 px;*/
+}
+
+.box {
+	width: 72px;
+	height: 72px;
+	border: 1px solid black;
+	margin: 5px;
+	margin-right: 50px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 5px;
+	position: relative;
+	float: left;
+	color: white;
+	font-size: 19px;
+}
+
+.image2 {
+	border: 0px;
+	position: absolute;
+	top: -30px;
+	right: -30px;
+}
+
+
