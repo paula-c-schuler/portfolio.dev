@@ -423,7 +423,16 @@ nav ul {
     padding-right: 20px;
     padding-bottom: 20px;
 }
+/* "menu" hides the list items as normal */
+.menu {
+    display: none;
+}
+/* hover over "menu" reveals contents */
+li:hover .menu {
+    display: block;
+}
 
+/* display for drop down menu items */
 .menu li a {
     padding: 0px 20px 10px 20px;
     text-decoration: none;
@@ -434,14 +443,7 @@ nav ul {
     border: #bbb 1px dashed;
 }
 
-/* "menu" hides the list items as normal */
-.menu {
-    display: none;
-}
-/* hover over "menu" reveals contents */
-li:hover .menu {
-    display: block;
-}
+
 
 
 /* portfolio items */
@@ -522,7 +524,9 @@ li.portfolio-box {
 
 /* footer */
 /*===============================*/
-
+p .footer-copyright-line{
+  text-align: center;
+}
 
 
 
