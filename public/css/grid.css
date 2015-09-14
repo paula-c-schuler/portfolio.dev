@@ -12,6 +12,7 @@ html {
 .container {
     background-color: white;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 /* When you nest a row inside a column,
@@ -68,7 +69,16 @@ html {
 .column:last-of-type {
     padding-right: 0px;
 }
+.column-right {
+    float: right;
+    width: 100%;
+    padding-right: 0px;
+}
 
+
+.col-* {
+    float:left;
+}
 
 
 /* Extra Small Screens - Phones
