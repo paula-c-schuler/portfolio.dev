@@ -64,7 +64,7 @@ html {
 .column {
     float: left;
     width: 100%;
-    padding-right: 10px;
+    
 }
 /* Remove padding in last element of column */
 .column:last-of-type {

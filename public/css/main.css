@@ -461,8 +461,12 @@ li:hover .menu {
 /* Portfolio items */
 /*=============================*/
 
+.portfolio-box-parent {
+  text-align: center;
+}
 .portfolio-box {
-  /*float: left;*/
+  display: inline-block;
+  text-align: center;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 30px;
@@ -470,6 +474,7 @@ li:hover .menu {
   height: 300px;
   list-style-type: none;
 }
+
 .portfolio-box.esther-box {
     background-image: 
     linear-gradient(
