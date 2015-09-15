@@ -479,46 +479,7 @@ li:hover .menu {
       rgba(0, 0, 0, 0.5)
     ),url("/img/calculator.png");
 }
-/*====================================
-  * I cannot figure out how to get the 
-  * boxes to center together in the row. 
-  * The code above works okay using divs. 
-  * Wanted to try it using list item element
-  * and having more of a running list on the 
-  * page rather than just a set of boxes. 
-  * Stuck. Will think about it. */
-li.portfolio-box {
-  /*list-style-type: none;*/
-  /*float: left;*/
-  /*margin-left: 15px;*/
-  /*margin-right: 15px;*/
-  /*margin-bottom: 30px;*/
-  /*width: 200px;*/
-  /*height: 200px;*/
-  /*display: inline;*/
-  /*text-align: center;*/
-}
-.portfolio-box.esther-box {
-    background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),url("/img/esther.png");
-}
-.portfolio-box.whack-box {
-    background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),url("/img/whack.png");
-}
-.portfolio-box.calculator-box {
-    background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),url("/img/calculator.png");
-}
+
 
 
 
