@@ -10,14 +10,12 @@
  *
  * COLORS...............Colors list.
  *
- * TOOLS
- * Mixins...............Useful mixins.
+ * RESET................Normalize.css file is separate
+ * Customized...........Code to handle broswer challenges.
  *
  * GENERIC
- * Reset................A level playing field by Normalize.css
- * Grid.................Grid layout styles 
- *                      
- * HELPERS..............Shortcut styling helps.
+ * Grid.................Grid layout styles               
+ * Helpers..............Shortcut styling helps.
  *
  * TYPOGRPAHY
  * Type.................Reset HTML or root styles. H1–H6 styles. Basic type styles.
@@ -39,7 +37,7 @@
 \*------------------------------------*/
 
 .primary-color {
-  background-color: #3F51B5;
+  background-color: #4CA5D4;
 }
 
 .secondary-color {
@@ -47,32 +45,23 @@
 }
 
 .accent-color {
-  background-color: #FF80AB;
+  background-color: #8FD7F4;
 }
 
 /* Colors Library
    ========================================================================== */
 /* Blues */
 .primary-color {
-  /*background-color: #3F51B5;*/
   background-color: #4CA5D4;
 }
 .primary-color-fallback {
-  /*background-color: #E8EAF6;*/
   background-color: #96D0E7;
 }
 .primary-color-lighter {
-  /*background-color: #7986CB;*/
-  /*background-color: #58BEF4;*/
   background-color: #8FD7F4;
 }
 .primary-color-darker {
-  /*background-color: #1A237E;*/
-  /*background-color: #479DCA;*/
   background-color: #4798C2;
-}
-.primary-color-bright {
-  background-color: #3D5AFE;
 }
 
 /* Greens */
@@ -90,23 +79,14 @@
 }
 
 /* accent color swatches have light text default */
-.text-base-light {
+.text-white {
   color: #FFFFFF;
 }
-/* alternative text color for light backgrounds */
-.text-base-dark {
-  color: #000000;
+.text-light {
+  color: #96D0E7;
 }
 
-.text-primary, .text-primary-light {
-  opacity: 87%;
-}
-.text-secondary, .text-secondary-light {
-  opacity: 54%;
-}
-.text-hint, .text-hint-light {
-  opacity: 26%;
-}
+
 
 
 /*------------------------------------*\
@@ -120,7 +100,7 @@
  *    without disabling user zoom.
  */
 html {
-  font-family: serif;
+  font-family: sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -260,12 +240,14 @@ html {
 }
 
 body {
-  	font-size: 16px;
   	font-size: 1.6rem;
   	line-height: 1.6;
   	font-weight: 400;
-  	font-family: "Source Sans Pro", sans-serif;
-  	color: #B7B7B7; 
+  	font-family: "Verdana", sans-serif;
+  	/*color: #B7B7B7; */
+    /*color: #ACACAC;*/
+    color: #133456;
+
 }
 
 
@@ -323,7 +305,7 @@ h6 {
 }
 
 h1 {
-  	color: #3498db; 
+  	color: #4798C2; 
 }
 
 h2 {
@@ -331,7 +313,7 @@ h2 {
 }
 
 h3 {
-  	color: #16a085; 
+  	color: #00C853; 
 }
 
 h4 {
@@ -415,7 +397,7 @@ li.name {
 /*=============================*/
 
 .myButton {
-  background-color:#44c767;
+  background-color:#00C853;
   -moz-border-radius:34px;
   -webkit-border-radius:34px;
   border-radius:34px;
@@ -423,7 +405,7 @@ li.name {
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:Arial;
+  font-family:Verdana;
   font-size:20px;
   padding:15px 50px;
   text-decoration:none;
