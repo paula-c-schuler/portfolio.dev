@@ -54,23 +54,28 @@
    ========================================================================== */
 /* Blues */
 .primary-color {
-  background-color: #3F51B5;
+  /*background-color: #3F51B5;*/
+  background-color: #4CA5D4;
 }
 .primary-color-fallback {
-  background-color: #E8EAF6;
+  /*background-color: #E8EAF6;*/
+  background-color: #96D0E7;
 }
 .primary-color-lighter {
-  background-color: #7986CB;
+  /*background-color: #7986CB;*/
+  /*background-color: #58BEF4;*/
+  background-color: #8FD7F4;
 }
 .primary-color-darker {
-  background-color: #1A237E;
+  /*background-color: #1A237E;*/
+  /*background-color: #479DCA;*/
+  background-color: #4798C2;
 }
 .primary-color-bright {
   background-color: #3D5AFE;
 }
 
-/* Pinks */
-/* Change to greens */
+/* Greens */
 .accent-color {
   background-color: #00E676;
 }
@@ -402,6 +407,35 @@ li.name {
 
 
 
+/*------------------------------------*\
+    COMPONENTS
+\*------------------------------------*/
+
+/* Buttons */
+/*=============================*/
+
+.myButton {
+  background-color:#44c767;
+  -moz-border-radius:34px;
+  -webkit-border-radius:34px;
+  border-radius:34px;
+  border:1px solid #18ab29;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:20px;
+  padding:15px 50px;
+  text-decoration:none;
+  text-shadow:0px 0px 0px #2f6627;
+}
+.myButton:hover {
+  background-color:#5cbf2a;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
 
 
 /*------------------------------------*\
@@ -456,6 +490,9 @@ li:hover .menu {
 
 /* Intro and contact */
 /*=============================*/
+
+
+
 
 
 /* Portfolio items */
