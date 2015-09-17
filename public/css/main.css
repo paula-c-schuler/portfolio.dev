@@ -152,12 +152,12 @@ video {
   vertical-align: baseline;
   /* 2 */ 
 }
-/* Remove padding from Chrome's defaults for ul and menu */
+/* Remove padding and margins from Chrome's defaults for ul and menu */
 ul, menu, dir {
     display: block;
     list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;
@@ -449,6 +449,9 @@ nav ul {
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+    font-size: 2em;
+    color: #00C853;
+    background-color: #4798C2;
 }
 /* "menu" hides the list items as normal */
 .menu {
