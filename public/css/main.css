@@ -223,6 +223,9 @@ img {
 .row-top-buffer {
   padding-top: 4rem;
 }
+.hidden {
+  display: none;
+}
 
 /*------------------------------------*\
     #TYPOGRAPHY
@@ -436,16 +439,18 @@ li.name {
 
 /* navigation bar */
 /*=============================*/
-nav p {
+
+div p {
     margin: 0;
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
     overflow: hidden;
     -webkit-padding-start: 0;
-    display: block;
+    display: none;
     font-size: 1.5em;
-    color: #4798C2;
+    /*color: #4798C2;*/
+    color: white;
     text-align: right;
     background-color: #4798C2;
 }
