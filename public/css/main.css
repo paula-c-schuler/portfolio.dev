@@ -436,15 +436,24 @@ li.name {
 
 /* navigation bar */
 /*=============================*/
-nav ul {
+nav p {
     margin: 0;
     padding: 0;
     list-style: none;
     overflow: hidden;
     -webkit-padding-start: 0;
+    display: block;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+    color: #4798C2;
+    background-color: #4798C2;
 }
 
-.menu-icon {
+/* Changing to a JavaScript display of contact info 
+ * Might use some of this code for that. */
+/*.menu-icon {
     display: block;
     padding-top: 20px;
     padding-right: 20px;
@@ -452,26 +461,27 @@ nav ul {
     font-size: 2em;
     color: #00C853;
     background-color: #4798C2;
-}
+}*/
+
 /* "menu" hides the list items as normal */
-.menu {
+/*.menu {
     display: none;
-}
+}*/
 /* hover over "menu" reveals contents */
-li:hover .menu {
+/*li:hover .menu {
     display: block;
-}
+}*/
 
 /* display for drop down menu items */
-.menu li a {
+/*.menu li a {
     padding: 0px 20px 10px 20px;
     text-decoration: none;
     text-align: center;
     width: 100%;
     float: right;
-    background-color: #ccc;
+    background-color: #B9F6CA;
     border: #bbb 1px dashed;
-}
+}*/
 
 /* Intro and contact */
 /*=============================*/
