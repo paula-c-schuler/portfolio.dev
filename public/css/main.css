@@ -78,14 +78,6 @@
   background-color: #00C853;
 }
 
-/* accent color swatches have light text default */
-.text-white {
-  color: #FFFFFF;
-}
-.text-light {
-  color: #96D0E7;
-}
-
 
 
 
@@ -155,7 +147,7 @@ video {
 /* Remove padding and margins from Chrome's defaults for ul and menu */
 ul, menu, dir {
     display: block;
-    list-style-type: disc;
+    list-style-type: none;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
@@ -440,65 +432,42 @@ li.name {
 /* navigation bar */
 /*=============================*/
 
-div p {
+div p.topbar-contact {
     margin: 0;
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
     overflow: hidden;
     -webkit-padding-start: 0;
-    display: none;
-    font-size: 1.5em;
-    /*color: #4798C2;*/
+    font-size: 1em;
     color: white;
     text-align: right;
     background-color: #4798C2;
+    border-bottom: 1px dashed white;
 }
 
-/* Changing to a JavaScript display of contact info 
- * Might use some of this code for that. */
-/*.menu-icon {
-    display: block;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    font-size: 2em;
-    color: #00C853;
-    background-color: #4798C2;
-}*/
 
-/* "menu" hides the list items as normal */
-/*.menu {
-    display: none;
-}*/
-/* hover over "menu" reveals contents */
-/*li:hover .menu {
-    display: block;
-}*/
 
-/* display for drop down menu items */
-/*.menu li a {
-    padding: 0px 20px 10px 20px;
-    text-decoration: none;
-    text-align: center;
-    width: 100%;
-    float: right;
-    background-color: #B9F6CA;
-    border: #bbb 1px dashed;
-}*/
+
 
 /* Intro and contact */
 /*=============================*/
 
-
+n
 
 
 
 /* Portfolio items */
 /*=============================*/
 
+section.hero-portfolio {
+  padding: 5em;
+}
+
 .portfolio-box-parent {
   text-align: center;
+  padding-top: 7em;
+  padding-bottom: 7em;
 }
 .portfolio-box {
   display: inline-block;
@@ -506,9 +475,11 @@ div p {
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 30px;
-  width: 300px;
-  height: 300px;
+  padding-left: 35px;
+  width: 250px;
+  height: 250px;
   list-style-type: none;
+  /*border-radius: 50%;*/
 }
 
 .portfolio-box.esther-box {
