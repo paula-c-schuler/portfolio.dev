@@ -479,7 +479,6 @@ section.hero-portfolio {
   width: 250px;
   height: 250px;
   list-style-type: none;
-  /*border-radius: 50%;*/
 }
 
 .portfolio-box.esther-box {
@@ -503,8 +502,21 @@ section.hero-portfolio {
       rgba(0, 0, 0, 0.5)
     ),url("/img/calculator.png");
 }
+.portfolio-box:hover{
+  background-color: purple;
+  color: white;
+}
 
+/* about */
+/*===============================*/
 
+section.about {
+  text-align: center;
+}
+img.profile-main {
+  display: inline-block;
+  border-radius: 50%;
+}
 
 
 
