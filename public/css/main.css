@@ -513,10 +513,15 @@ section.hero-portfolio {
 section.about {
   text-align: center;
 }
-img.profile-main {
+img.about-profile-photo {
   display: inline-block;
   border-radius: 50%;
 }
+.about-bio {
+  padding: 2em;
+}
+
+
 
 
 
