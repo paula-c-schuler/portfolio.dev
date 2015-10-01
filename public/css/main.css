@@ -480,32 +480,37 @@ section.hero-portfolio {
   height: 250px;
   list-style-type: none;
 }
+/*h2.portfolio-box-text {
+  margin: 0;
+  padding-top: 1em;
+}*/
+
 
 .portfolio-box.esther-box {
     background-image: 
     linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),url("/img/esther.png");
+      rgba(0, 0, 0, 0.99),
+      rgba(87, 62, 140, 0.8)
+    ),
+    url("/img/esther.png");
 }
 .portfolio-box.whack-box {
     background-image: 
     linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),url("/img/whack.png");
+      rgba(0, 0, 0, 0.99),
+      rgba(87, 62, 140, 0.8)
+    ),
+    url("/img/whack.png");
 }
 .portfolio-box.calculator-box {
     background-image: 
     linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),url("/img/calculator.png");
+      rgba(0, 0, 0, 0.99),
+      rgba(87, 62, 140, 0.8)
+    ),
+    url("/img/calculator.png");
 }
-.portfolio-box:hover{
-  background-color: purple;
-  color: white;
-}
+
 
 /* about */
 /*===============================*/
@@ -517,7 +522,7 @@ img.about-profile-photo {
   display: inline-block;
   border-radius: 50%;
 }
-.about-bio {
+div.about-bio {
   padding: 2em;
 }
 
