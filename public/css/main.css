@@ -500,27 +500,18 @@ div.about-bio {
 /*===============================*/
 
 footer {
-  /*color: white;*/
-  color: ;
   color: #217cbb;
   text-align: left;
   padding-left: 100px;
 }
-p.footer-contact {
-  font-size: 1em;
-}
-p.footer-copyright-line {
-  font-size: 1em;
-  display: inline;
+footer p, 
+i {
+  display: inline-block;
 }
 div.footer-social-icons {
   width: 218px;
   text-align: left;
 }
-i {
-  display: inline-block;
-}
-
 
 
 
