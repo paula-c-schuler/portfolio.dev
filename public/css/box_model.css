@@ -1,9 +1,3 @@
-/* EXERCISE 1.5.3 Box Model -  BOX POSITIONING WITH NO FLOATS
- * EXERCISE 1.5.4 Box Sizing
- * EXERCISE 1.5.5 Box Positioning
- * EXERCISE 1.5.7 CSS Organization
-*/
-
 /**
  * CONTENTS
  *
@@ -62,7 +56,7 @@ body {
 }
 
 /*------------------------------------*\
-    CODE FOR LAYOUT AND POSITIONING
+    CODE BLOCKS
 \*------------------------------------*/
 #container {
 	position: relative;
@@ -85,7 +79,6 @@ h1{
 	position: absolute;
 	top: -30px;
 	right: -30px;
-	/*right: 5 px;*/
 }
 
 .box {
